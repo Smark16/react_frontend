@@ -6,8 +6,8 @@ import axios from 'axios'
 function Editperson() {
     const navigate = useNavigate()
     const {id} = useParams()
-    const singlePerson = `http://127.0.0.1:8000/applications/single_person/${id}`
-    const singleUrl = `http://127.0.0.1:8000/applications/update_person/${id}`
+    const singlePerson = `https://registration-form-backend-2.onrender.com/applications/single_person/${id}`
+    const singleUrl = `https://registration-form-backend-2.onrender.com/applications/update_person/${id}`
     
     const [person, setPerson] = useState({Admission_No:"", Surname:"", Other_Names:"", Sex:"", Date_Of_Birth:"", Age:"", Postal_Address:"", Telephone:"", Email:"", Home_District:"", Subcounty:"", Nationality:"", Occupation:"", Present_Job_TiTle:""})
 
