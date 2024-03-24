@@ -8,7 +8,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { Link } from 'react-router-dom';
 
-const personsUrl = 'http://127.0.0.1:8000/applications/';
+const personsUrl = 'https://registration-form-backend-2.onrender.com/applications/';
 
 function Personal() {
   const [person, setPerson] = useState([]);
@@ -17,7 +17,7 @@ function Personal() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://127.0.0.1:8000/applications/delete_person/${id}`);
+      await axios.delete(`https://registration-form-backend-2.onrender.com/applications/delete_person/${id}`);
       setPerson((prevPerson) => prevPerson.filter((person) => person.id !== id));
     } catch (err) {
       console.log("there was an err");
