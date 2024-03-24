@@ -6,8 +6,8 @@ import './main.css'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 
-const personPostUrl = 'http://127.0.0.1:8000/applications/new_person'
-const employerPostUrl = 'http://127.0.0.1:8000/applications/new_employer'
+const personPostUrl = 'https://registration-form-backend-2.onrender.com/applications/new_person'
+const employerPostUrl = 'https://registration-form-backend-2.onrender.com/applications/new_employer'
 
 function Form() {
     const [visible, setVisible] = useState(false)
