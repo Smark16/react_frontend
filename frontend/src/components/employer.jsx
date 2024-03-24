@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
-const employerUrl = 'http://127.0.0.1:8000/applications/employer'
+const employerUrl = 'https://registration-form-backend-2.onrender.com/applications/employer'
 
 function Employer() {
   const [employer, setEmployer] = useState([]);
@@ -15,7 +15,7 @@ function Employer() {
 
   const handleDelete = async (id)=>{
     try{
-      await axios.delete(`http://127.0.0.1:8000/applications/delete_employer/${id}`)
+      await axios.delete(`https://registration-form-backend-2.onrender.com/applications/delete_employer/${id}`)
       setEmployer((prevEmployer) => prevEmployer.filter((employer) => employer.id !== id));
 
     }catch (err){
