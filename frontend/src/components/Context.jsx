@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import Swal from 'sweetalert2';
 import { jwtDecode } from 'jwt-decode';
-const LoginUrl = 'http://127.0.0.1:8000/applications/serializer'
+const LoginUrl = 'https://registration-form-backend-2.onrender.com/applications/serializer'
 
 export const AuthContext = createContext()
 
