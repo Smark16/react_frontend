@@ -5,6 +5,7 @@ import './main.css'
 function Login() {
   const {loginUser} = useContext(AuthContext)
   const [user, setUser] = useState({username:"", password:""})
+  const [loading, setLoading] = useState(false)
 
 
   const handleChange =(e)=>{
@@ -14,10 +15,12 @@ function Login() {
 
   const handleSubmit = (e)=>{
       e.preventDefault()
+      setLoading(true)
       if(loginUser){
         const username = user.username
         const password = user.password
         loginUser(username, password)
+        setLoading(false)
       }
   }
   return (
@@ -54,9 +57,7 @@ function Login() {
     </div>
   </div>
   
-  <button type="submit" className="btn btn-primary">
-    Login
-  </button>
+  <button type="submit" className="btn btn-primary">{loading ? (<span className='loader'></span>) : 'Login'}</button>
   </form>
  </>
   )

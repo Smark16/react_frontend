@@ -8,10 +8,9 @@ import Editperson from './components/editperson'
 import Editemployer from './components/editemployer'
 import { AuthProvider} from './components/Context'
 import Login from './components/login'
-import { useContext } from 'react'
 import Logout from './components/Logout'
 import PrivateRoute from './components/privateRoute'
-import { userContext } from './Authenticate.jsx/Auth'
+
 
 function App() {
 
