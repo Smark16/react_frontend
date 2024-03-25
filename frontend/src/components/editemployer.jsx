@@ -6,7 +6,11 @@ import Swal from 'sweetalert2'
 function Editemployer() {
     const {id} = useParams()
     const navigate = useNavigate()
+<<<<<<< HEAD
     const singleEmployerUrl = `https://registration-form-backend-2.onrender.com/applications/Single_employer/${id}`
+=======
+    const singleEmployerUrl = https://registration-form-backend-2.onrender.com/applications/Single_employer/${id}`
+>>>>>>> 0d5438f19d177ae2226256007b82f0e2b55549ac
     const updateEmployerUrl = `https://registration-form-backend-2.onrender.com/applications/update_employer/${id}`
     const [employer, setEmployer] = useState({Employer:"", Postal_Address:"",Telephone:"", Email:""})
 
