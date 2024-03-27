@@ -53,6 +53,7 @@ text-align: center;
     transition: 2s;
 }
 .loader {
+    color: #FF3D00;
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -65,7 +66,7 @@ text-align: center;
     position: absolute;
     inset: 0px;
     border-radius: 50%;
-    border: 5px solid #FFF;
+    border: 5px solid black;
     animation: prixClipFix 2s linear infinite ;
   }
   .loader::after{
